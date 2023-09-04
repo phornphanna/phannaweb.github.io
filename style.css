@@ -480,7 +480,7 @@ body{
     flex-direction: column;
     align-items: start;
     gap: 0;
-    margin-left: 1%;
+    /* margin-left: 1%; */
     background-color: transparent;
     margin-bottom: 80px;
 }
@@ -634,7 +634,7 @@ body{
     .container > .container_box {
         /* background-color: yellow; */
         width: 100%;
-    }
+    } 
     .container > .container_box > .box_card > .card >.sub_card {
         width: 33%;
     }
@@ -644,9 +644,27 @@ body{
 } 
 /*  make responsive screen 512px */
 @media screen and (max-width : 540px){
+    .container{
+        margin-left: 0;
+        padding-left: 0;
+    } .container > .container_box {
+        margin-left: 0;
+        padding-left: 0;
+    } .container > .container_box > .box_card {
+        margin-left: 0;
+        padding-left: 0;
+    }.container > .container_box > .box_card  > .card {
+        margin-left: 0;
+        padding-left: 0;
+    }
     .container > .container_box > .box_card > .card >.sub_card {
         width: 45%;
         margin-left: 8px;
+    }
+  .container_box >  .box_btn > .btn {
+        padding: 0;
+        margin: 0;
+        padding: 6px 10px;
     }
   }
   /*  end fo respon sive  */
@@ -786,6 +804,7 @@ body{
     align-items: start;
     justify-content: space-evenly;
     padding: 20px 0px;
+    margin-bottom: 300px;
   }
   /* end of footer class */
   .footer >.sub_footer_left {
@@ -827,7 +846,7 @@ body{
         flex-direction: column;
         align-items: center;
         gap: 10px;
-        padding: 20px 5px;
+        padding: 20px 0px;
     }
     .footer > .sub_footer_right > .icon_social{
         justify-content: center;
