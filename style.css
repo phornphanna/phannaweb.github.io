@@ -108,6 +108,7 @@ body{
 .header > .header_list > .navigation > .menu > li{
     padding: 6px 0px;
 }
+
 .header > .header_list >.navigation > .menu > li:first-child.list_active{
     border-bottom: 2px solid var(--color-border-bottom);
 } 
